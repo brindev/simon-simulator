@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
+    <script defer src="script.js"></script>
+    <title>Simon simulator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="game-container">
+        <header class="header">
+          <h1>Simon Simulator</h1>
+        </header>
+
+        <div class="pad-container">
+          <div id="pad-green" class="pad">&nbsp;</div>
+          <div id="pad-inner-green" class="pad-inner">&nbsp;</div>
+          <div id="pad-red" class="pad">&nbsp;</div>
+          <div id="pad-inner-red" class="pad-inner">&nbsp;</div>
+          <div id="pad-yellow" class="pad">&nbsp;</div>
+          <div id="pad-inner-yellow" class="pad-inner">&nbsp;</div>
+          <div id="pad-blue" class="pad">&nbsp;</div>
+          <div id="pad-inner-blue" class="pad-inner">&nbsp;</div>
+          <div id="sequence-count">&nbsp;</div>
+          <div class="game-msg">&nbsp;</div>
+        </div>
+
+        <div class="menu-container">
+          <button type="button" id="btnStart" class="btn">Start</button>
+          <button type="button" id="btnEnd" class="btn">End</button>
+
+          <div class="speed-option-container">
+            <div id="speed-selector-container">
+              <div class="speed-value speed-selector">Easy</div>
+              <div class="speed-arrow speed-selector">&nbsp;</div>
+            </div>
+            <div class="speed-panel">
+              <div class="speed-select" data-value="easy">Easy</div>
+              <div class="speed-select" data-value="medium">Medium</div>
+              <div class="speed-select" data-value="hard">Hard</div>
+            </div>
+          </div>
+
+          <div class="sound-option-container">
+            <div id="sound-selector-container">
+              <div class="sound-value sound-selector">A maj</div>
+              <div class="sound-arrow sound-selector">&nbsp;</div>
+            </div>
+            <div class="sound-panel">
+              <div class="sound-select" data-value="nosound">None</div>
+              <div class="sound-select" data-value="a-major">A maj</div>
+              <div class="sound-select" data-value="b-flat-minor">B♭ min</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      by
+      <a
+        href="https://github.com/brindev/simon-simulator"
+        target="_blank"
+        rel="noreferrer"
+        >brindev</a
+      >
+    </footer>
+  </body>
+</html>
