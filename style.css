@@ -78,6 +78,7 @@ h1 {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #pad-green {
